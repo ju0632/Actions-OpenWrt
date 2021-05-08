@@ -11,6 +11,11 @@
 name: Build OpenWrt k2p
 
 on:
+  schedule:
+    - cron: 0 20 * * *
+  #release:
+  #  types: [published]
+  
   repository_dispatch:
   workflow_dispatch:
     inputs:
